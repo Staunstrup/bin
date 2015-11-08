@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#Setting permissions in www directory to allow browser access
+
+sudo chown jst $1
+sudo chgrp www-data $1
+sudo chmod u+x $1
+sudo chmod u+r $1
+sudo chmod g+x $1
+
+

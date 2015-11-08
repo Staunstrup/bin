@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#Copying a appending date and time at the end of the file name
+
+date_formatted=$(date +%m_%d_%y-%H.%M.%S)
+sudo cp -iv $1 $1.$date_formatted

@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Disabling virtual iBeacon"
+#. /home/pi/bin/beacon.conf 
+echo "Disabling virtual iBeacon" 
+sudo hciconfig hci0 noleadv 
+echo "Complete"

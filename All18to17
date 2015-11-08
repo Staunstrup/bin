@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#Changing an 18 to a 17 in all project.properties files
+
+for f in *
+do
+  echo $f
+  sed -i -e 's/android-18/android-17/g' $f/project.properties
+done

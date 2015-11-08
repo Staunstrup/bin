@@ -1,0 +1,7 @@
+#!/bin/sh 
+echo "Launching virtual iBeacon..." 
+sudo hciconfig hci0 up 
+sudo hciconfig hci0 leadv 
+sudo hciconfig hci0 noscan 
+sudo hcitool -i hci0 cmd 0x08 0x0008 1E 02 01 1A 1A FF 4C 00 02 15 e2 08 b5 fd fb ad 45 f9 9f bf e7 a0 92 15 d5 66 00 01 00 05 c8 00
+echo "Complete" 
